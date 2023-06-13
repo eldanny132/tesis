@@ -1,0 +1,295 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-size: 14px;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+  }
+  
+  .fondo {
+    width: 100%;
+    height: 100%;
+    background: rgba(245, 245, 245, 1);
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  
+  .header {
+    width: 100%;
+    height: 14%;
+    background: rgba(15, 111, 181, 1);
+    opacity: 1;
+    position: static;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+  }
+  
+  .logo2 {
+    width: 247px;
+    height: 144px;
+    background: url("../../assets/encabezado/logo2.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: .5%;
+    overflow: hidden;
+  }
+  
+  .CAT {
+    width: 70%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 25px;
+    left: 17%;
+    font-family: Roboto;
+    font-weight: Bold;
+    font-size: 30px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .UAS {
+    width: 30%;
+    color: rgba(255, 255, 255, 1);
+    position: absolute;
+    top: 85px;
+    left: 17%;
+    font-family: Roboto;
+    font-weight: Medium;
+    font-size: 22px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  .logo1 {
+    width: 161px;
+    height: 144px;
+    background: url("../../assets/encabezado/logo1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    top: 2px;
+    left: 2%;
+    overflow: hidden;
+  }
+  
+  .v41_1249 {
+    width: 198px;
+    color: rgba(48, 46, 46, 1);
+    position: absolute;
+    top: 238px;
+    left: 59px;
+    font-family: Roboto;
+    font-weight: Medium;
+    font-size: 32px;
+    opacity: 1;
+    text-align: left;
+  }
+  
+  nav {
+    text-align: center;
+    top: 14%;
+    background: rgba(196, 158, 13, 1);
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+  }
+  
+  nav a {
+    padding: 10px 40px;
+    font-size: 30px;
+    color: white;
+    line-height: 1;
+    text-decoration: none;
+  }
+  
+  .registrar:hover {
+    background-color: #0e3d72;
+  }
+  
+  .contact_form {
+    width: 460px;
+    height: 100%;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: white;
+    padding-left: 30px;
+  }
+  
+  .normales input {
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4474ab;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #4474ab;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+  }
+  
+  label {
+    display: block;
+    float: center;
+  }
+  
+  .registro:hover {
+    background-color: rgb(13, 91, 147);
+  }
+  
+  span {
+    color: rgba(15, 111, 181, 1);
+  }
+  
+  .aviso {
+    font-size: 13px;
+    color: #0e0e0e;
+  }
+  
+  
+  h1 {
+    font-size: 39px;
+    text-align: letf;
+    padding-bottom: 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  
+  h3 {
+    font-size: 16px;
+    padding-bottom: 30px;
+    color: #0e0e0e;
+  }
+  
+  
+  p {
+    font-size: 14px;
+    color: #0e0e0e;
+  }
+  
+  
+  ::-webkit-input-placeholder {
+    color: #a8a8a8;
+  }
+  
+  
+  .formulario input:focus {
+    outline: 0;
+    border: 1px solid rgba(196, 158, 13, 1);
+  }
+  
+  .header_interno {
+    height: 145px;
+  }
+  table{
+    margin-top: 10%;
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+}
+
+thead{
+	background-color: #2d4056;
+	border-bottom: solid 5px #0f2136;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #1b3b60b5;
+	color: white;
+}
+button {
+  border: none;
+  color: #082154;
+  background-color: rgba(255,255,255,0);
+}
+
+  .mi-input {
+    /* Estilos personalizados */
+    background-color: rgb(255, 255, 255);
+    color: white;
+    font-size: 16px;
+    padding: 5px;
+    border:#0e0e0e
+  }
+  .mi-input {
+    /* Estilos personalizados */
+    position: relative;
+    top: 200px;
+    left: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+  }
+  .buscar{
+    position: relative;
+    top: 225px;
+    left: 125px;
+    
+  }
+  .Filtro{
+    position: relative;
+    top: 250px;
+    left: 550px;
+    
+  }
+  .combobox {
+    /* Estilos personalizados para el <select> */
+    background-color: lightgray;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    position: relative;
+    top: 200px;
+    left: 400px;
+    /* Otros estilos que desees aplicar */
+  }
+  
+  .combobox option {
+    /* Estilos personalizados para las opciones del <select> */
+    background-color: white;
+    color: black;
+    /* Otros estilos que desees aplicar */
+}
+
+
+  

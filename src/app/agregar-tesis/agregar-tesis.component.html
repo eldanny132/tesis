@@ -1,0 +1,106 @@
+<div class="fondo">
+    <div class="header">
+        <div class="header_interno">
+            <div class="logo2"></div>
+            <span class="CAT">COMISION ACADEMICA DE TITULACIÓN</span>
+            <span class="UAS">UNIVERSIDAD AUTONOMA DE SINALOA</span>
+            <div class="logo1"></div>
+        </div>
+        <nav id="opciones">
+            <a routerLink="/principal">Inicio </a>
+            <a routerLink="/agregar_tesis">Solicitar tema de tesis </a>
+            <a href="/registro_tesis">Solicitudes de tema </a>
+            <a href="/solicitud_presentacion">Solicitudes de presentacion </a>
+            <a href="/peticion_presentacion">Solicitar presentacion </a>
+        </nav>
+    </div>
+    <form [formGroup]="tesis" (ngSubmit)="agregartesis()" class="contact_form">
+
+        <div class="formulario">
+            <h1>Solicitar tema de tesis</h1>
+
+            <section class="normales">
+
+                <p>
+                    <label for="nombre" class="colocar_titulo">Titulo de tesis
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input formControlName="Titulo_de_tesis" class="normal" type="text" name="introducir_nombre"
+                        id="nombre" required="obligatorio" placeholder="Escribe tu nombre">
+                </p>
+
+                <p>
+                    <label for="carrera" class="colocar_carrera">Carrera
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input formControlName="carrera" class="normal" type="text" name="introducir_carrera" id="carrera"
+                        required="obligatorio" placeholder="Carrera">
+                </p>
+
+                <p>
+                    <label for="Alumno1" class="colocar_alumno">Nombre de alumno
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input formControlName="Nombre_alumno" class="1" type="Alumno" name="introducir_Alumno" id="Alumno"
+                        required="obligatorio" placeholder="Nombre de alumno">
+                </p>
+
+                <p>
+                    <label for="Alumno2" class="colocar_alumno2">Alumno 2 (opcional)
+                    </label>
+                    <input formControlName="Nombre_alumno2" class="1" type="Alumno" name="introducir_Alumno2"
+                        id="Alumno2" placeholder="Nombre de Alumno #2">
+                </p>
+
+                <p>
+                    <label for="Alumno3" class="colocar_alumno3">Alumno 3 (opcional)
+                    </label>
+                    <input formControlName="Nombre_alumno3" class="1" type="Alumno" name="introducir_Alumno3"
+                        id="Alumno3" placeholder="Nombre de Alumno #3">
+                </p>
+
+                <p>
+                    <label for="Director" class="colocar_Director">Director de tesis *
+                    </label>
+                    <input formControlName="Director" class="1" type="Nombre" name="introducir_Director" id="Director"
+                        placeholder="Nombre de Director de tesis">
+                </p>
+
+                <p>
+                    <label for="Codirector" class="colocar_codirector">codirector (opcional)
+                    </label>
+                    <input formControlName="Codirector" class="1" type="Alumno" name="introducir_codirector"
+                        id="codirector" placeholder="Nombre de codirector">
+                </p>
+
+                <p>
+                    <label for="sinodal1" class="colocar_sinodal">Sinodal 1 (opcional)
+                    </label>
+                    <input formControlName="Sinodal" type="Nombre" name="introducir_sinodal1" id="sinodal1"
+                        placeholder="Nombre de sinodal">
+                </p>
+
+                <p>
+                    <label for="sinodal2" class="colocar_sinodal">Sinodal 2 (opcional)
+                    </label>
+                    <input formControlName="Sinoda2" type="Nombre" name="introducir_sinodal2" id="sinodal2"
+                        placeholder="Nombre de sinoda #2">
+                </p>
+
+            </section>
+
+            <input type="file" (change)="onFileSelected($event)">
+            <button (click)="uploadFile()">Subir archivo</button>
+
+            <button class="registrar" type="submit" name="enviar_formulario" id="Registrar">
+                <p>Registrar</p>
+            </button>
+
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+
+        </div>
+    </form>
+
+</div>

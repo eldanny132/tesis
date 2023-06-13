@@ -1,0 +1,41 @@
+<div class="fondo">
+    <div class="header">
+        <div class="header_interno">
+            <div class="logo2"></div>
+            <span class="CAT">COMISION ACADEMICA DE TITULACIÓN</span>
+            <span class="UAS">UNIVERSIDAD AUTONOMA DE SINALOA</span>            
+            <div class="logo1"></div>
+        </div>
+        <nav id="opciones">
+            <a routerLink="/principal">Inicio </a>
+            <a routerLink="/agregar_tesis">Solicitar tema de tesis </a>
+            <a href="/registro_tesis">Solicitudes de tema </a>
+            <a href="/solicitud_presentacion">Solicitudes de presentacion </a>
+            <a href="/peticion_presentacion">Solicitar presentacion </a>
+        </nav>
+    </div>
+    <form class = "contact_form">
+
+        <div class="formulario">
+            <h1>Solicitar tema de tesis</h1>
+
+            <label for="upload" class="label-file">Ingresar documento de tesis</label>
+            <input type="file" id="upload" onchange="showFileName(this)" accept=".pdf, .doc, .docx">
+            <p id="file-name" class="file-name"></p>
+
+            <label for="upload" class="label-file">Ingresar formato de peticion de presentacion</label>
+            <input type="file" id="upload" onchange="showFileName(this)" accept=".pdf, .doc, .docx">
+            <p id="file-name" class="file-name"></p>
+
+            <button class="registrar" type="submit" name="enviar_formulario" id="Registrar">
+                <p>Registrar</p>
+            </button>
+
+            <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+            </p>
+
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,60 @@
+<div class="fondo">
+    <div class="header">
+        <div class="header_interno">
+            <div class="logo2"></div>
+            <span class="CAT">COMISION ACADEMICA DE TITULACIÓN</span>
+            <span class="UAS">UNIVERSIDAD AUTONOMA DE SINALOA</span>            
+            <div class="logo1"></div>
+        </div>
+        <nav id="opciones">
+            <a routerLink="/principal">Inicio </a>
+            <a routerLink="/agregar_tesis">Solicitar tema de tesis </a>
+            <a href="/registro_tesis">Solicitudes de tema </a>
+            <a href="/solicitud_presentacion">Solicitudes de presentacion </a>
+            <a href="/peticion_presentacion">Solicitar presentacion </a>
+        </nav>
+    </div>
+
+    <label class = "Filtro" style="color: rgb(4, 4, 4); font-size: 22px;" >Filtro</label>
+    <label class = "buscar" style="color: rgb(4, 4, 4); font-size: 22px;" >Buscar</label>
+    <input #buscar (keyup)="searchTesis(buscar.value ,$event)" class="mi-input">
+
+    <select class="combobox" (change)="onSelectChangeEstatus($event)">
+        <option value="0">Todas las propiedades</option>
+        <option value="pendiente" > Pendiente </option>
+        <option value="aceptado" > Aceptado </option>
+        <option value="rechazado" > Rechazado </option>
+</select>
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo de tesis</th>
+                <th>Nombre alumno</th>
+                <th>Nombre alumno 2</th>
+                <th>Nombre alumno 3</th>
+                <th>Director</th>
+                <th>Codirector</th>
+                <th>Sinoda l</th>
+                <th>Sinoda 2</th>
+                <th>Fecha solicitud tema</th>
+                <th>Estatus tema</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let Tesi of Tesis">
+                <td>{{Tesi.Titulo_de_tesis}}</td>
+                <td>{{Tesi.Nombre_alumno}}</td>
+                <td>{{Tesi.Nombre_alumno2}}</td>
+                <td>{{Tesi.Nombre_alumno3}}</td>
+                <td>{{Tesi.Director}}</td>
+                <td>{{Tesi.Codirector}}</td>
+                <td>{{Tesi.Sinodal}}</td>
+                <td>{{Tesi.Sinoda2}}</td>
+                <td>{{Tesi.Fecha_solicitud_tema}}</td>
+                <td>{{Tesi.Estatus_tema}}</td>
+                <td><button routerLink="/editar_estatus_tema/{{Tesi.id}}"><i class="fa-solid fa-pen-to-square"></i></button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
